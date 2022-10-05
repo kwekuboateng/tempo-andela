@@ -3,12 +3,12 @@
 
 - I created the various components such as 
 - `Teams (displays list of all teams`, 
-    I list all teams using a datatable with pagination and a global search input by name
+I list all teams using a datatable with pagination and a global search input by name
 - `Team (displays details of a single team with it's leader and members and a Graph`, 
-    A user can get to this component from the Teams component by click Team Details button
-    and fetches a single team by appending the id to the teams endpoint
+A user can get to this component from the Teams component by clicking Team Details button
+and fetches a single team by appending the id to the teams endpoint and redirect to Team component
 - `Graph (Graph showing number of team members per team)`, 
-- `Users (displays single user)`
+- `UserProfile (displays single user)`
 - `Api (makes all server request)`
 - `ErrorPage (displays a fallback component when there is an error`
 
