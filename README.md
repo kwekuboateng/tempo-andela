@@ -1,3 +1,20 @@
+## How the problem and/or solution was approached
+- First of all, I created a react application written in typescript
+
+- I created the various components such as 
+`Teams (displays list of all teams`, 
+    I list all teams using a datatable with pagination and a global search input by name
+`Team (displays details of a single team with it's leader and members and a Graph`, 
+    A user can get to this component from the Teams component by click Team Details button
+    and fetches a single team by appending the id to the teams endpoint
+`Graph (Graph showing number of team members per team)`, 
+`Users (displays single user)`
+`Api (makes all server request)`
+`ErrorPage (displays a fallback component when there is an error`
+
+- 
+## Provide information on how to run the application
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -39,8 +56,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
