@@ -77,13 +77,16 @@ const Team = () => {
               <div className="col-md-8 col-lg-6">
                 <HeaderSection>
                   <Title className="text-center">
-                    Let's meet with our team members
+                    {TeamDetails.name} Team Members
                   </Title>
                 </HeaderSection>
               </div>
-              <div className="col-md-12 col-lg-12">
+            </div>
+            <div className="row">
+              <div className="col-md-12  col-lg-12">
                 <SmallTitle>TEAM LEAD</SmallTitle>
-                {Object.keys(teamLead).length !== 0 && (
+              </div>
+              {Object.keys(teamLead).length !== 0 && (
                   <UserProfile
                     name={teamLead.displayName}
                     avatar={teamLead.avatarUrl}
@@ -92,7 +95,6 @@ const Team = () => {
                     location={teamLead.location}
                   />
                 )}
-              </div>
             </div>
             <div className="row">
               <div className="col-md-12  col-lg-12">
