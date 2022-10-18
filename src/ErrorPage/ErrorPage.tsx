@@ -1,4 +1,5 @@
 import React from 'react';
+import {ErrorContainer} from '../Shared/Styles'
 
 interface IError {
     error?: any,
@@ -7,11 +8,11 @@ interface IError {
 
 const ErrorPage = ({error, resetErrorBoundary}: IError) => {
   return (
-    <div className='text-center' role="alert">
+    <ErrorContainer role="alert">
       <p>Something went wrong:</p>
-      <pre>{error.message}</pre>
+      <pre>{error.message !== null ? error.message : error}</pre>
       <button className='btn btn-primary' onClick={resetErrorBoundary}>Try again</button>
-    </div>
+    </ErrorContainer>
   )
 }
 

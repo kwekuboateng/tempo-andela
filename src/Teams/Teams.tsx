@@ -41,11 +41,6 @@ const FilterComponent = ({ filterText, onFilter, onClear }: FilterProps) => (
 export default function Teams() {
   const [data, setData] = React.useState<ITeamsObj[]>([]);
 
-  const fetchData = async () => {
-    const getTeamsResponse = await getAllTeams();
-    setData(getTeamsResponse);
-  };
-
   const columns = useMemo(
     () => [
       { name: "Id", selector: (row: IRow) => row.id, sortable: true },
@@ -65,6 +60,11 @@ export default function Teams() {
   );
 
   React.useEffect(() => {
+    const fetchData = async () => {
+        const getTeamsResponse = await getAllTeams();
+        setData(getTeamsResponse);
+    };
+
     fetchData();
   }, []);
 

@@ -21,7 +21,7 @@ const UserProfile = ({name, avatar, firstName, lastName, location}: IAppProps) =
     <div className="col-sm-6 col-lg-4 col-xl-3">
     <SinglePerson data-testid="user-profile">
         <PersonImage>
-            <img src="https://secure.gravatar.com/avatar/dacc916f5af8b779abce64bdc0720fca?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-0.png" alt="profile pic" />
+            <img src="https://secure.gravatar.com/avatar/dacc916f5af8b779abce64bdc0720fca?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-0.png" alt={name} />
             <Icon>
                 <i className="fab fa-html5"></i>
             </Icon>

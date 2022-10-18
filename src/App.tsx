@@ -5,7 +5,6 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  MemoryRouter,
 } from "react-router-dom";
 import { ErrorBoundary } from "react-error-boundary";
 import ErrorPage from "./ErrorPage/ErrorPage";
